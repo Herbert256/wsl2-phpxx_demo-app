@@ -6,8 +6,6 @@
 	</head>
 
 	<body>
-
-		<?php set_memory_cache ('wsl2-phpxx', 'Stored to and retrieved from Memcached') ?>
 		
 		<blockquote>
 			
@@ -30,7 +28,7 @@
 				<li><a href="/phpmyadmin">/phpmyadmin</a></li>
 			</ul>
 
-			<p><?php echo get_memory_cache ('wsl2-phpxx') ?></p>
+			<p><?php echo memory_cache () ?></p>
 
 		</blockquote>
 
