@@ -27,8 +27,8 @@
 
     $version = phpversion();
 
-    $php     = 1000000 * ( $start          - $_SERVER['REQUEST_TIME_FLOAT'] );
-    $page    = 1000000 * ( microtime(true) - $start                         );
+    $php     = (int) ( 1000000 * ( $start          - $_SERVER['REQUEST_TIME_FLOAT'] ) );
+    $page    = (int) ( 1000000 * ( microtime(true) - $start                         ) );
  
     $line = "Version: $version, PHP: $php, Page: $page";
 
