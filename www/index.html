@@ -1,16 +1,19 @@
+<?php include '/app/php/wsl2-phpxx.php' ?>
 <html>
 
 	<head>
-		<title>WSL2-PHPxx</title>
+		<title>WSL2-PHPxx - <?php echo phpversion(); ?></title>
 	</head>
 
 	<body>
+
+		<?php set_memory_cache ('wsl2-phpxx', 'Stored to and retrieved from Memcached') ?>
 		
 		<blockquote>
 			
 			<br/>
 
-			<h1>WSL-PHPxx</h1>
+			<h1>WSL-PHPxx - <?php echo phpversion(); ?></h1>
 
 			<ul>
 				<li>PHP 8.0 &nbsp; <a href="http://localhost:1080">http://localhost:1080</a></li>
@@ -25,11 +28,13 @@
 				<li><a href="/phpinfo">/phpinfo</a></li>
 				<li><a href="/phpsysinfo">/phpsysinfo</a></li>
 				<li><a href="/phpmyadmin">/phpmyadmin</a></li>
-				<li><a href="/wordpress">/wordpress</a></li>
 			</ul>
+
+			<p><?php echo get_memory_cache ('wsl2-phpxx') ?></p>
 
 		</blockquote>
 
 	</body>
 
 </html>
+<?php write_log() ?>
