@@ -7,9 +7,11 @@
 
 	<body>
 		
-		<h1>WSL2-PHPxx / Demo App</h1>
+		<h1>WSL2-PHPxx - Demo App</h1>
 
-		<p>Small demo application for <a href="https://github.com/Herbert256/wsl2-phpxx">WSL2-PHPxx</a></p>
+		<p>Small demo application for testing the <a href="https://github.com/Herbert256/wsl2-phpxx">WSL2-PHPxx</a> setup.</p>
+ 
+ 		<h3>PHP version active now: <?php echo phpversion(); ?></h3>
 
 		<h3>Switch to</h3>
 		<ul>
