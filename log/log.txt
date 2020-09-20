@@ -1,0 +1,1 @@
+# This file will be appended by every phpxx distro

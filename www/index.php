@@ -11,7 +11,7 @@
 			
 			<br/>
 
-			<h1>WSL-PHPxx - <?php echo phpversion(); ?></h1>
+			<h1>WSL2-PHPxx - <?php echo phpversion(); ?></h1>
 
 			<ul>
 				<li>PHP 8.0 &nbsp; <a href="http://localhost:1080">http://localhost:1080</a></li>
@@ -25,10 +25,11 @@
 			<ul>
 				<li><a href="/phpinfo">/phpinfo</a></li>
 				<li><a href="/phpsysinfo">/phpsysinfo</a></li>
-				<li><a href="/phpmyadmin">/phpmyadmin</a></li>
+				<li><a href="/phpmyadmin">/phpmyadmin</a> (use user 'data' whith no password)</li>
 			</ul>
 
 			<p><?php echo memory_cache () ?></p>
+			<p><?php echo database_cache () ?></p>
 
 		</blockquote>
 
