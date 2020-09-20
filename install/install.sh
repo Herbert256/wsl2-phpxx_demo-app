@@ -6,5 +6,5 @@ chown data:data /var/www/html
 
 service mariadb start
 sleep 2
-mysql < install/wsl2-phpxx.sql
+mysql < install/install.sql
 service mariadb stop
