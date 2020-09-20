@@ -16,7 +16,7 @@
  
     $line = "Version: $version, PHP: $php, Page: $page";
 
-    file_put_contents ('/app/log/wsl2-phpxx.txt', $line . PHP_EOL, LOCK_EX | FILE_APPEND);
+    file_put_contents ('/app/log/log.txt', $line . PHP_EOL, LOCK_EX | FILE_APPEND);
 
   }
 
