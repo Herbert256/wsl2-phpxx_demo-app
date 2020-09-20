@@ -1,1 +1,0 @@
-# This file will be written by every PHP distro
