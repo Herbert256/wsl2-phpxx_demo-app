@@ -25,14 +25,14 @@
 
   function memory_cache () {
 
-    $value = get_memory_cache ('wsl2_phpxx');
+    $value = get_memory_cache ('wsl');
 
     if ( $value !== FALSE) 
       return $value;
 
-    set_memory_cache ( 'wsl2_phpxx', 'From memory, stored by ' . phpversion() );
+    set_memory_cache ( 'wsl', 'From memory, stored by ' . phpversion() );
 
-    return get_memory_cache ('wsl2_phpxx');
+    return get_memory_cache ('wsl');
 
   }
 

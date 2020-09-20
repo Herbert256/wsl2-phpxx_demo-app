@@ -1,15 +1,17 @@
-DROP DATABASE IF EXISTS `wsl2-phpxx`;
-DROP USER     IF EXISTS 'wsl2-phpxx'@'localhost';
 
-CREATE DATABASE `wsl2-phpxx`;
-USE `wsl2-phpxx`;
+DROP DATABASE IF EXISTS wsl2;
+DROP USER     IF EXISTS 'wsl2'@'localhost';
 
-CREATE USER 'wsl2-phpxx'@'localhost' IDENTIFIED BY 'wsl2-phpxx';
-GRANT ALL PRIVILEGES ON `wsl2-phpxx`.* TO 'wsl2-phpxx'@'localhost';
+CREATE DATABASE wsl;
+USE wsl;
+
+CREATE USER 'wsl'@'localhost' IDENTIFIED BY 'wsl';
+GRANT ALL PRIVILEGES ON wsl.* TO 'wsl'@'localhost';
 FLUSH PRIVILEGES;
 
-CREATE TABLE `wsl2-phpxx` (
-  `key`    varchar(32),
-  `value`  varchar(3256)
+CREATE TABLE wsl (
+  id   varchar(32),
+  val  varchar(3256)
 );
 
+ALTER TABLE wsl ADD PRIMARY KEY (id);
