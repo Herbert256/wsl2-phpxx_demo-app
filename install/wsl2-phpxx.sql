@@ -1,6 +1,6 @@
 
-DROP DATABASE IF EXISTS wsl2;
-DROP USER     IF EXISTS 'wsl2'@'localhost';
+DROP DATABASE IF EXISTS wsl;
+DROP USER     IF EXISTS 'wsl'@'localhost';
 
 CREATE DATABASE wsl;
 USE wsl;
