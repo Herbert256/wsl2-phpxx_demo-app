@@ -1,12 +1,10 @@
 <?php
 
-
   $start = microtime (true);
 
   include 'memcached.php';
   include 'mariadb.php';
   include 'filesystem.php';
-
 
   function version ($check) {
 
@@ -16,6 +14,5 @@
       echo ' <b>***</b>';
 
   }
-
 
 ?>
